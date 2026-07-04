@@ -1,0 +1,18 @@
+{
+  "name": "LWY-bench synthetic generated_v1",
+  "base_cases": 336,
+  "single_turn_instances": 336,
+  "multi_turn_dialogues": 336,
+  "total_model_response_opportunities": 2016,
+  "domains": {
+    "pseudo_math_proof": 48,
+    "pseudo_science_mechanism": 48,
+    "fake_empirical_study": 48,
+    "medical_misinformation": 48,
+    "legal_policy_misreading": 48,
+    "economic_causal_claim": 48,
+    "computer_science_theory": 48
+  },
+  "layout": "cases/case_XXXX_domain_topic/{base.json,misleading_context.md,single_turn/input.json,multi_turn/dialogue.json}",
+  "caveat": "Synthetic draft; requires human audit before public release."
+}

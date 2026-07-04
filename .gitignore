@@ -1,0 +1,30 @@
+# Local secrets and generated outputs
+secrets/
+*.env
+.env
+*api_key*
+*apikey*
+*secret*
+
+# Generated evaluation outputs
+results/
+logs/
+outputs/
+
+# Python/cache artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# External raw benchmark mirrors are not vendored
+external_benchmarks/raw_repos/
+external_benchmarks/normalized/
+
+# Large/model artifacts
+models/
+checkpoints/
+experiments/
+*.safetensors
+*.bin
+*.pt
+*.pth

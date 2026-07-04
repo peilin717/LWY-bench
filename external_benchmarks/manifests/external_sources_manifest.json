@@ -1,0 +1,59 @@
+{
+  "created_for": "LWY-bench",
+  "purpose": "External sycophancy benchmark resources downloaded or generated for reuse/comparison.",
+  "entries": [
+    {
+      "name": "ChaosWithKeywords",
+      "source_repo": "https://github.com/3rdAT/ChaosWithKeywords",
+      "source_paper": "Chaos with Keywords",
+      "status": "downloaded_and_normalized",
+      "license": "MIT",
+      "normalized_files": {
+        "normalized/chaos_with_keywords/generic_model_outputs.jsonl": 2500
+      },
+      "raw_file_counts": {
+        "data/Generic/GPT_3.5_Turbo.csv": 500,
+        "data/Generic/Llama2_13b.csv": 500,
+        "data/Generic/Llama2_7b.csv": 500,
+        "data/Generic/Mistral7b.csv": 500,
+        "data/Generic/Orca13b.csv": 500
+      },
+      "notes": "The repo provides misleading keyword prompts and source model statements. It does not include verified gold factuality labels in the CSV files."
+    },
+    {
+      "name": "sycophancy-eval",
+      "source_repo": "https://github.com/meg-tong/sycophancy-eval",
+      "source_paper": "Towards Understanding Sycophancy in Language Models",
+      "status": "downloaded_and_normalized",
+      "normalized_files": {
+        "normalized/sycophancy_eval/answer.jsonl": 7268,
+        "normalized/sycophancy_eval/are_you_sure.jsonl": 4888,
+        "normalized/sycophancy_eval/feedback.jsonl": 8500
+      },
+      "notes": "Repository contains prompt datasets but no explicit license file. Use with citation and verify license before public redistribution."
+    },
+    {
+      "name": "sycophancy-intervention",
+      "source_repo": "https://github.com/google/sycophancy-intervention",
+      "source_paper": "Simple Synthetic Data Reduces Sycophancy in Large Language Models",
+      "status": "repo_downloaded_and_simple_addition_eval_generated",
+      "license": "Apache-2.0",
+      "normalized_files": {
+        "normalized/sycophancy_intervention/simple_addition_eval.jsonl": 5000
+      },
+      "notes": "The repository provides code to generate training/eval data. This normalized file deterministically instantiates the simple addition false-claim evaluation without requiring HuggingFace datasets."
+    },
+    {
+      "name": "SycEval",
+      "source_paper": "SycEval: Evaluating LLM Sycophancy",
+      "status": "no_public_repo_found_in_pdf_or_web_search",
+      "notes": "Paper describes AMPS and MedQuad based evaluation, but no directly downloadable benchmark repository was found in the local PDF text or web search."
+    },
+    {
+      "name": "Check My Work",
+      "source_paper": "Check My Work? Measuring Sycophancy in a Simulated Educational Context",
+      "status": "no_public_repo_found_in_pdf_or_web_search",
+      "notes": "Paper describes MMLU-based educational framing experiments, but no directly downloadable benchmark repository was found in the local PDF text or web search."
+    }
+  ]
+}
